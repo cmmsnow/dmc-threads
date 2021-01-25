@@ -17,23 +17,23 @@ public class ThreadColorService {
         return repository.save(threadColor);
     }
 
-    public void deleteThreadColor(Integer ColorID){
-        repository.delete(repository.findThreadColorByColorID(ColorID));
+    public void deleteThreadColor(Integer colorID){
+        repository.delete(repository.findThreadColorByColorID(colorID));
     }
 
     public List<ThreadColor> getAllThreadColors(){
         return (List<ThreadColor>) repository.findAll();
     }
 
-    public ThreadColor getThreadColorByID(Integer ColorID){
-        return repository.findThreadColorByColorID(ColorID);
+    public ThreadColor getThreadColorByID(Integer colorID){
+        return repository.findThreadColorByColorID(colorID);
     }
 
-    public ThreadColor putEditThreadColor(Integer ColorID, String ColorName, String Hexadecimal, String ColorFamily){
-        ThreadColor threadColor = repository.findThreadColorByColorID(ColorID);
-        threadColor.setColorName(ColorName);
-        threadColor.setHexadecimal(Hexadecimal);
-        threadColor.setColorFamily(ColorFamily);
+    public ThreadColor putEditThreadColor(Integer colorID, String colorName, String hexadecimal, String colorFamily){
+        ThreadColor threadColor = repository.findThreadColorByColorID(colorID);
+        threadColor.setColorName(colorName);
+        threadColor.setHexadecimal(hexadecimal);
+        threadColor.setColorFamily(colorFamily);
         return repository.save(threadColor);
     }
 }

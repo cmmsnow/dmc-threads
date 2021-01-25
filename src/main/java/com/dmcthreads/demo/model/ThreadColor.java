@@ -8,48 +8,48 @@ public class ThreadColor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer ColorID;
-    private String ColorName;
-    private String Hexadecimal;
-    private String ColorFamily;
+    private Integer colorID;
+    private String colorName;
+    private String hexadecimal;
+    private String colorFamily;
 
     public ThreadColor(){}
 
-    public ThreadColor(String ColorName, String Hexadecimal, String ColorFamily){
-        this.ColorName = ColorName;
-        this.Hexadecimal = Hexadecimal;
-        this.ColorFamily = ColorFamily;
+    public ThreadColor(String colorName, String hexadecimal, String colorFamily){
+        this.colorName = colorName;
+        this.hexadecimal = hexadecimal;
+        this.colorFamily = colorFamily;
     }
 
     public Integer getColorID() {
-        return ColorID;
+        return this.colorID;
     }
 
     public void setColorID(Integer colorID) {
-        ColorID = colorID;
+        this.colorID = colorID;
     }
 
     public String getColorName() {
-        return ColorName;
+        return this.colorName;
     }
 
     public void setColorName(String colorName) {
-        ColorName = colorName;
+        this.colorName = colorName;
     }
 
     public String getHexadecimal() {
-        return Hexadecimal;
+        return this.hexadecimal;
     }
 
     public void setHexadecimal(String hexadecimal) {
-        Hexadecimal = hexadecimal;
+        this.hexadecimal = hexadecimal;
     }
 
     public String getColorFamily() {
-        return ColorFamily;
+        return this.colorFamily;
     }
 
     public void setColorFamily(String colorFamily) {
-        ColorFamily = colorFamily;
+        this.colorFamily = colorFamily;
     }
 }

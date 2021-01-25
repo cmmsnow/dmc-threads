@@ -13,26 +13,26 @@ import java.util.List;
 public class ThreadColorController {
 
     @Autowired
-    ThreadColorService service;
+    ThreadColorService threadColorService;
 
     @PostMapping("threads/addthread")
     public ResponseEntity<ThreadColor> addComment(@RequestBody ThreadColor threadColor){
-        return new ResponseEntity<>(service.addThreadColor(threadColor), HttpStatus.CREATED);}
+        return new ResponseEntity<>(threadColorService.addThreadColor(threadColor), HttpStatus.CREATED);}
 
-    @DeleteMapping("deletethread/{ColorID}")
-    public void deleteThreadColorById(@PathVariable Integer ColorID){ service.deleteThreadColor(ColorID);}
+    @DeleteMapping("deletethread/{colorID}")
+    public void deleteThreadColorById(@PathVariable Integer colorID){ threadColorService.deleteThreadColor(colorID);}
 
     @GetMapping("threads/allthreads")
     public ResponseEntity<List<ThreadColor>> getAllThreadColors(){
-        return new ResponseEntity<>(service.getAllThreadColors(), HttpStatus.OK);
+        return new ResponseEntity<>(threadColorService.getAllThreadColors(), HttpStatus.OK);
     }
 
-    @GetMapping("threadsbyid/{ColorID}")
-    public ResponseEntity<ThreadColor> getThreadColorByID(@PathVariable Integer ColorID){return new ResponseEntity<>(service.getThreadColorByID(ColorID), HttpStatus.OK);}
+    @GetMapping("threadsbyid/{colorID}")
+    public ResponseEntity<ThreadColor> getThreadColorByID(@PathVariable Integer colorID){return new ResponseEntity<>(threadColorService.getThreadColorByID(colorID), HttpStatus.OK);}
 
-    @PutMapping("threads/{ColorID}")
-    public ResponseEntity<ThreadColor> updateComment(@RequestBody ThreadColor threadColor, @PathVariable Integer ColorID) {
-        return new ResponseEntity<>(service.putEditThreadColor(ColorID, threadColor.getColorName(), threadColor.getHexadecimal(), threadColor.getColorFamily()), HttpStatus.OK);
+    @PutMapping("threads/{colorID}")
+    public ResponseEntity<ThreadColor> updateComment(@RequestBody ThreadColor threadColor, @PathVariable Integer colorID) {
+        return new ResponseEntity<>(threadColorService.putEditThreadColor(colorID, threadColor.getColorName(), threadColor.getHexadecimal(), threadColor.getColorFamily()), HttpStatus.OK);
     }
 
 }
