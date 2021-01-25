@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ThreadColorRepository extends JpaRepository<ThreadColor, Integer> {
 
+    ThreadColor findThreadColorByColorID(Integer ColorID);
 }
