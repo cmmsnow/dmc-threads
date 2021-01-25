@@ -1,4 +1,3 @@
-CREATE TABLE Threads (ColorID int AUTO_INCREMENT, ColorName varchar(50), Hexadecimal varchar(50), ColorFamily varchar(50), PRIMARY KEY(ColorID));
 insert into Threads (ColorName, Hexadecimal, ColorFamily) values ('DMC_33', '#9C599C', 'RED');
 insert into Threads (ColorName, Hexadecimal, ColorFamily) values ('DMC_34', '#7D3064', 'RED');
 insert into Threads (ColorName, Hexadecimal, ColorFamily) values ('DMC_221', '#883E43', 'RED');
