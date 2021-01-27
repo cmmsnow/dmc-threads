@@ -11,8 +11,6 @@ insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_34
 insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_349', '#D21035', 'RED');
 insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_350', '#E04848', 'RED');
 insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_351', '#E96A67', 'RED');
-insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_349', '#D21035', 'RED');
-insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_350', '#E04848', 'RED');
 insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_353', '#FED7CC', 'RED');
 insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_355', '#984436', 'RED');
 insert into Thread_color (color_name, hexadecimal, color_family) values ('DMC_356', '#C56A5B', 'RED');

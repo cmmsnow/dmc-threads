@@ -13,7 +13,7 @@ public class ThreadColor {
     private String hexadecimal;
     private String colorFamily;
 //    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-////    @JoinColumn(name = "pattern_id", nullable = false)
+//    @JoinColumn(name = "pattern_id", nullable = false)
 //    private ColorPattern colorPattern;
 
     public ThreadColor(){}
@@ -56,6 +56,6 @@ public class ThreadColor {
     }
 
 //    public ColorPattern getColorPattern() { return colorPattern; }
-//
+
 //    public void setColorPattern(ColorPattern colorPattern) { this.colorPattern = colorPattern; }
 }
